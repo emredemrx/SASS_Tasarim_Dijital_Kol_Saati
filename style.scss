@@ -1,0 +1,192 @@
+$font-family:    Helvetica, sans-serif;
+$primary-color: rgb(219, 219, 219);
+$tusRengi-color: rgb(29, 29, 29);
+$tusUstu-color:rgba(255, 255, 255, 0.267);
+$saatText-color:aliceblue;
+$saatArka-color:rgb(53, 53, 53);
+$disCerceve-color:rgb(24, 24, 24);
+$yansima-color:rgb(194, 194, 194);
+$kordon-color:rgb(17, 17, 17);
+
+
+body {
+  font: 100% $font-family;
+  background-color: $primary-color;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  padding: 0;
+  margin: 0;
+}
+.area{
+  position: absolute;
+  top: 750px;
+  left: 50%;
+  zoom: 70%;
+  border: 1px solid red;
+  .saat{
+    .disCerceve{
+      position: absolute;
+      top: calc(50% - 150px);
+      left: calc(50% - 150px);
+      width: 250px;
+      height: 250px;
+      background-color: $disCerceve-color;
+      border-radius:55px;
+    }
+    .icCerceve{
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      background-color:$saatArka-color;
+      top: calc(50% - 135px);
+      left: calc(50% - 135px);
+      border-radius:55px;
+      box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.5) -3px -3px 6px 1px inset;
+      .icerik{
+        margin-top: 25px;
+        p {
+            padding: 0;
+            color: $saatText-color;
+            font-size: 110px;
+            font-weight: bold;
+            line-height: 85px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            justify-content: center;
+            align-items: center;
+        }
+      }
+    }
+    .icCerceveUst{
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      background-color: rgb(53, 53, 53);
+      opacity: 0.1;
+      top: calc(50% - 135px);
+      left: calc(50% - 135px);
+      border-radius:55px;
+      box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.5) -3px -3px 6px 1px inset;
+    }
+    .yansima{
+      position: absolute;
+      top: calc(50% - 150px);
+      left: calc(50% - 150px);
+      width: 250px;
+      height: 250px;
+      background-color: $yansima-color;
+      opacity:0.2;
+      clip-path: polygon(57% 0, 100% 0, 0 100%, 0 100%, 0 54%);
+      border-radius:55px;
+    }
+  }
+  .ustKordon{
+    position: absolute;
+    top: calc(50% - 600px);
+    left: calc(50% - 100px);
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 150px;
+    background-color: $kordon-color;
+    border-radius: 20px 20px 0 0  ;
+  }
+  .kelepce{
+    height: 65px;
+    width: 160px;
+    background-color: black;
+    border-radius: 15px 15px 8px 8px ;
+    padding: 0;
+    position: absolute;
+    top: calc(50% - 675px);
+    left: calc(50% - 106px);
+    padding-top: 20px;
+    .kelepceDemir{
+      height: 65px;
+      width: 15px;
+      background-color: rgb(46, 46, 46);
+      border-radius: 15px 15px 0 0 ;
+      justify-content: center;
+      margin-left: 70px;
+      margin-top: -55px;
+    }
+    .kelepceOrt{
+      height: 50px;
+      width: 130px;
+      margin-left: 15px ;
+      background-color: $primary-color;
+      padding: 0;
+      border-radius: 15px 15px 0 0 ;
+      -webkit-border-radius: 15px 15px 0 0 ;
+      -moz-border-radius: 15px 15px 0 0 ;
+      -ms-border-radius: 15px 15px 0 0 ;
+      -o-border-radius: 15px 15px 0 0 ;
+}
+  }
+  .altKordon {
+    position: absolute;
+    top: calc(50% + 100px);
+    left: calc(50% - 100px);
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 150px;
+    background-color: $kordon-color;
+    border-radius:  0 0 20px 20px ;
+    ul{
+      margin-top: 145px;
+      li {
+        background-color: $primary-color;
+        list-style: none;
+        width: 40px;
+        height: 15px;
+        margin-left: 15px;
+        margin-top: 25px;
+      }
+    }
+  }
+  .tuslar{
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .tus{
+      background-color: $tusRengi-color;
+      width: 25px;
+      height: 60px;
+      border-radius: 0 15px 15px 0;
+      position: relative;
+      position: absolute;
+      top: calc(50% - 15px);
+      left: calc(50% + 99px);
+    }
+    .tusUstu{
+      position: absolute;
+      top: calc(50% - 4px);
+      left: calc(50% + 99px);
+      position: absolute;
+      ul{
+        margin: 0;
+        padding: 0;
+        li{
+          margin-top: 3px;
+          margin-bottom: 6px;
+          list-style: none;
+          width: 25px;
+          height: 3px;
+          background-color: $tusUstu-color;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
