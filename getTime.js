@@ -1,4 +1,4 @@
-function verSaat()
+function Saat()
 {
     var tarih=new Date();
     return tarih;
@@ -6,8 +6,8 @@ function verSaat()
 function saatGoster() {
     const saatP = document.getElementById("saat");
     const dakikaP = document.getElementById("dakika");
-    saatP.innerHTML= verSaat().getHours();
-    dakikaP.innerHTML= verSaat().getMinutes();
+    saatP.innerHTML= Saat().getHours();
+    dakikaP.innerHTML= Saat().getMinutes();
 }
 saatGoster();
 setInterval("saatGoster()", 1000); //işlemi belirli aralıklar ile gerçekleştir 1sn
